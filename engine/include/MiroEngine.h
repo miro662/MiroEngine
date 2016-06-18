@@ -5,5 +5,6 @@
 
 // ECS
 #include "ecs/entity.h"
+#include "ecs/component.h"
 
 #endif

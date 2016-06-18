@@ -7,6 +7,9 @@
 
 int main(){
   Entity ball = createEntity();
-  printf("%u", ball);
+  Component* transform = addComponent(ball, Unknown);
+  Component* transform2 = addComponent(ball, Unknown);
+
+  freeComponentList();
   return 0;
 }
