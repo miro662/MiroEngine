@@ -1,0 +1,5 @@
+#Folder containing builds
+Builds*
+
+#Temporary build script
+build.sh
