@@ -1,7 +1,7 @@
 #ifndef __MIROENGINE_ECS_ENTITY_H
 #define __MIROENGINE_ECS_ENTITY_H
 
-// engine/ecs/entity.h - basic entity management
+// engine/include/ecs/entity.h - basic entity management
 
 // === TYPES ===
 

@@ -3,11 +3,14 @@
 
 // MiroEngine.h - main MiroEngine include file
 
+// math
+#include "math/vector.h"
+
 // ECS
 #include "ecs/entity.h"
 #include "ecs/component.h"
 
-// math
-#include "math/vector.h"
+// components
+#include <components/transform.h>
 
 #endif
