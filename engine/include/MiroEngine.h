@@ -7,4 +7,7 @@
 #include "ecs/entity.h"
 #include "ecs/component.h"
 
+// math
+#include "math/vector.h"
+
 #endif
