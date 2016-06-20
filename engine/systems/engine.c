@@ -22,8 +22,10 @@ SDL_Window* window;
 
 void engineMain()
 {
+#ifndef __EMSCRIPTEN__
   // Declare at-exit function
   atexit(engineAtExit);
+#endif
 
   // Initialize SDL2
   SDL_Init(SDL_INIT_VIDEO);
@@ -31,10 +33,14 @@ void engineMain()
   // Call OnInit event to everyone
   callEvent(OnInit, NULL);
 
-  // Main loop for standard platforms
-  while (1) {
-    mainLoop();
-  }
+  #ifdef __EMSCRIPTEN__
+    emscripten_set_main_loop(mainLoop, 60, 1);
+  #else
+    // Main loop for standard platforms
+    while (1) {
+      mainLoop();
+    }
+  #endif
 }
 
 void mainLoop()
