@@ -7,6 +7,7 @@
 int main() {
   // TODO: Insert your code here
 
+  addSystem(S_Window);
   addSystem(S_Engine);
   return 0;
 }

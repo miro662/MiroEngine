@@ -13,6 +13,8 @@ void S_Engine(EventType type, EventData* data)
       printf("Initialized main MiroEngine system...");
       engineMain();
       break;
+    case Exit:
+      exit(0);
   }
 }
 
@@ -45,8 +47,8 @@ void mainLoop()
   }
 
   EventData d;
-  d.sdlEvent = &sdlEvent;
-  callEvent(OnUpdate, NULL);
+  d.deltaTime = 0;
+  callEvent(OnUpdate, &d);
 }
 
 void engineAtExit()

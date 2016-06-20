@@ -11,6 +11,7 @@ typedef enum {
   OnExit,
   OnUpdate,
   OnRender,
+  Exit,
   // Events related to SDL2
   SDLEvent
 } EventType;

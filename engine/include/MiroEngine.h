@@ -10,9 +10,12 @@
 #include "math/vector.h"
 
 // Typefiles
-#include <events/event-data.h>
 #include <events/event-types.h>
 #include <component-types.h>
+
+// Events
+#include <events/onrender.h>
+#include <events/event-data.h>
 
 // ECS
 #include "ecs/entity.h"
@@ -22,7 +25,9 @@
 // components
 #include <components/transform.h>
 
+
 // SYSTEMS
 #include <systems/engine.h>
+
 
 #endif

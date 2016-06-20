@@ -1,4 +1,4 @@
-#ifndef __MIROENGINE_SYSTEMS_ENGINE_H
+#ifndef __MIROENGINE_SYSTEMS_WINDOW_H
 #define __MIROENGINE_SYSTEMS_ENGINE_H
 
 // Main engine system
