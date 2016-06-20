@@ -2,8 +2,9 @@
 #define __EVENT_TYPES_H
 
 typedef enum {
-  #include <event-component-types.h>
-  TestEvent
+  #include <code-event-types.h>
+  ,
+  OnSystemAdded
 } EventType;
 
 #endif

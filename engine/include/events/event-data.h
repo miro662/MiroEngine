@@ -1,5 +1,5 @@
-#ifndef __EVENT_TYPES_H
-#define __EVENT_TYPES_H
+#ifndef __EVENT_DATA_H
+#define __EVENT_DATA_H
 
 typedef union {
   int test;

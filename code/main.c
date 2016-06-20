@@ -6,13 +6,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
-  Entity ball = createEntity();
-  Component* transform = addComponent(ball, Transform);
-  transform->data = malloc(sizeof(C_Transform));
-  C_Transform* transformData = (C_Transform*) transform->data;
-  transformData->position = vector(0,0);
-  transformData->rotation = 0;
-  freeComponentList();
+void testSystem(EventType type, EventData* data) {
+  printf("Called TestEvent!\n");
+}
+
+int main() {
+  addSystem(testSystem);
+  freeSystems();
   return 0;
 }
