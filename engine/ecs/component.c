@@ -16,6 +16,7 @@ Component* addComponent(Entity entity, ComponentType type) {
   }
 
   componentList = newComponent;
+  return newComponent;
 }
 
 void freeComponentList() {
