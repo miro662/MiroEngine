@@ -4,7 +4,15 @@
 typedef enum {
   #include <code-event-types.h>
   ,
-  OnSystemAdded
+  // Events related to ECS
+  OnSystemAdded,
+  // Events related to main loop
+  OnInit,
+  OnExit,
+  OnUpdate,
+  OnRender,
+  // Events related to SDL2
+  SDLEvent
 } EventType;
 
 #endif

@@ -3,6 +3,9 @@
 
 // MiroEngine.h - main MiroEngine include file
 
+// SDL2
+#include <SDL2/SDL.h>
+
 // math
 #include "math/vector.h"
 
@@ -18,5 +21,8 @@
 
 // components
 #include <components/transform.h>
+
+// SYSTEMS
+#include <systems/engine.h>
 
 #endif

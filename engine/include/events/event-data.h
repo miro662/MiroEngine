@@ -2,7 +2,8 @@
 #define __EVENT_DATA_H
 
 typedef union {
-  int test;
+  float deltaTime;
+  SDL_Event* sdlEvent;
 } EventData;
 
 #endif
