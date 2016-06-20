@@ -6,7 +6,7 @@
 // Component defining position and rotation of object
 typedef struct {
   // Object position
-  Vector postion;
+  Vector position;
   // Object rotation (in degrees)
   float rotation;
 } C_Transform;

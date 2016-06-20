@@ -2,6 +2,7 @@
 #define __COMPONENT_TYPES_H
 
 typedef enum {
+  #include <code-component-types.h>
   Transform,
   Unknown
 } ComponentType;
